@@ -1,0 +1,28 @@
+# Binaries
+bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go
+go.sum
+vendor/
+*.test
+*.out
+
+# Benchmark Results
+benchmarks/results/*.json
+benchmarks/results/*.csv
+benchmarks/results/*.png
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

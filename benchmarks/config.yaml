@@ -1,0 +1,17 @@
+strategy:
+  mode: single
+
+targets:
+  - virtual_key: openai
+    weight: 1.0
+
+plugins:
+  - name: request-logger
+    type: logging
+    stage: before_request
+    enabled: true
+    config:
+      level: error        # suppress access logs during bench — they skew numbers
+      persist: false
+      backend: sqlite
+      dsn: ferrogw-requests.db
